@@ -1,0 +1,20 @@
+# SPDX-License-Identifier: GPL-2.0-only
+config DRM_ACCEL_CALCULET
+	tristate "Calculet KS1 PCIe accelerator"
+	depends on DRM_ACCEL
+	depends on PCI && PCI_MSI && HAS_IOMEM
+	select CRC32
+	help
+	  DRM accel driver for CALCULET KS1 PCIe accelerators.
+
+	  The driver exposes every board as /dev/accel/accelN, a per-board
+	  sysfs attribute group and /proc/calculet_monitor. It provides BAR
+	  register access, bidirectional DMA channels, MSI-X completion,
+	  polled completion, process accounting, power management and PCIe
+	  soft reset.
+
+	  The userspace interface is described in
+	  include/uapi/drm/calculet_accel.h.
+
+	  To compile this driver as a module, choose M here: the module will
+	  be called calculet_pci.
