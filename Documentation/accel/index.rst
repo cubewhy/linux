@@ -9,5 +9,6 @@ Compute Accelerators
 
    introduction
    amdxdna/index
+   calculet
    qaic/index
    rocket/index

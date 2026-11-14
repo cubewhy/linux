@@ -5969,6 +5969,14 @@ W:	https://linuxtv.org
 T:	git git://linuxtv.org/media.git
 F:	drivers/media/radio/radio-cadet*
 
+CALCULET PCIE ACCELERATOR DRIVER
+M:	Mingyou Chen <qby140326@gmail.com>
+L:	dri-devel@lists.freedesktop.org
+S:	Maintained
+F:	Documentation/accel/calculet.rst
+F:	drivers/accel/calculet/
+F:	include/uapi/drm/calculet_accel.h
+
 CAFE CMOS INTEGRATED CAMERA CONTROLLER DRIVER
 L:	linux-media@vger.kernel.org
 S:	Orphan
